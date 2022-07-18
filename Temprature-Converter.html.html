@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <style>
+      *{
+      padding:0;
+      box-sizing:borderbox;
+        margin:0;
+        outline:none;
+       border:none;
+        text-decoration:none;
+}
+        .demo,.de{
+          font-size: 25px;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          color:darkmagenta ;
+          line-height: 2em;
+          
+        }
+        #in,#input{
+          font-size: 18px;
+          color: black;
+          
+          
+        }
+        button{
+          
+          font-size: 25px;
+          background-color:lightgrey;
+          font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        }
+        div{
+          top:40%;
+          position: absolute;
+          left:50%;
+          border: 10px solid black;
+          padding:80px;
+          width: auto;
+          background-color:antiquewhite;
+
+         
+        }
+        
+         
+          
+       
+    </style>
+    
+    <script>
+      function convertToFahrenheit() {
+        var fahRenheit = 1.8 * document.getElementById("input").value + 32;
+
+        document.getElementById("result").innerHTML = fahRenheit;
+      }
+      function convertTocelsius() {
+        var celsius= 0.55* (document.getElementById("in").value )- 32 ;
+
+        document.getElementById("re").innerHTML = celsius;
+      }
+    </script>
+  </head>
+  
+  <Center>
+    <h2 class="container center animate-right" style="color: maroon; font-style: italic;font-size: 25pt;"> TEMPERATURE CONVERTER </h2></Center>
+  
+  <div>
+  <body>
+    <p class="demo">Enter Celsius value :</p>
+    <input id="input" />
+    <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+    <p id="result"></p>
+
+    <p class="de">Enter Fahrenheit value :</p>
+    <input id="in" />
+    <button onclick="convertTocelsius()" >Convert to Celsius</button>
+    <p id="re"></p>
+  
+  
+  </body>
+  </div>
+</html>
